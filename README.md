@@ -38,7 +38,7 @@ python aprs_wintak_gui.py
 
 ## Configuration Guide
 
-1. Configure WinTAK Server Connection
+1. **Configure WinTAK Server Connection**
 Because this script acts as a local TAK Server, you must point WinTAK to it:
 
 Open WinTAK.
@@ -57,7 +57,7 @@ Port: 8080
 
 Click OK and ensure the connection status is toggled ON.
 
-2. Configure the Gateway App
+2. **Configure the Gateway App**
 Launch aprs_wintak_gui.py.
 
 Enter your station's My Callsign (TX) (e.g., K5JGL-1).
