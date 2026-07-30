@@ -47,7 +47,7 @@ class APRSWinTAKApp(tk.Tk):
 
         ttk.Label(conn_frame, text="My Callsign (TX):").grid(row=0, column=0, sticky="e", padx=2)
         self.entry_mycall = ttk.Entry(conn_frame, width=12)
-        self.entry_mycall.insert(0, "K5JGL-1")
+        self.entry_mycall.insert(0, "NOID-1")
         self.entry_mycall.grid(row=0, column=1, padx=5)
 
         ttk.Label(conn_frame, text="SoundModem Host:").grid(row=0, column=2, sticky="e", padx=2)
