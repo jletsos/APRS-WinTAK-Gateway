@@ -44,11 +44,11 @@ Because this script acts as a local TAK Server, you must point WinTAK to it:
 * **Open WinTAK.**
 * **Navigate to Settings -> Network Preferences -> Manage Server Connections.**
 * **Click Add and configure the connection:**
- * **Description: Local APRS Bridge**
- * **Protocol: TCP (Make sure this is TCP, not SSL or UDP)**
- * **Host Address: 127.0.0.1**
- * **Port: 8080**
- * **Click OK and ensure the connection status is toggled ON.**
+  * **Description: Local APRS Bridge**
+  * **Protocol: TCP (Make sure this is TCP, not SSL or UDP)**
+  * **Host Address: 127.0.0.1**
+  * **Port: 8080**
+  * **Click OK and ensure the connection status is toggled ON.**
 
 2. **Configure the Gateway App**
 * **Launch aprs_wintak_gui.py.**
