@@ -28,3 +28,50 @@ The project relies exclusively on Python's built-in standard libraries (Sockets,
 ```bash
 git clone [https://github.com/your-username/aprs-wintak-gateway.git](https://github.com/your-username/aprs-wintak-gateway.git)
 cd aprs-wintak-gateway
+```
+
+##Run the application:
+
+```Bash
+python aprs_wintak_gui.py
+```
+
+##Configuration Guide
+
+1. Configure WinTAK Server Connection
+Because this script acts as a local TAK Server, you must point WinTAK to it:
+
+Open WinTAK.
+
+Navigate to Settings -> Network Preferences -> Manage Server Connections.
+
+Click Add and configure the connection:
+
+Description: Local APRS Bridge
+
+Protocol: TCP (Make sure this is TCP, not SSL or UDP)
+
+Host Address: 127.0.0.1
+
+Port: 8080
+
+Click OK and ensure the connection status is toggled ON.
+
+2. Configure the Gateway App
+Launch aprs_wintak_gui.py.
+
+Enter your station's My Callsign (TX) (e.g., K5JGL-1).
+
+Verify your SoundModem host and KISS port settings (default is 127.0.0.1 and 8001).
+
+Click Start Bridge.
+
+Once connected, WinTAK will handshake with the local server, and the connection status will turn green.
+
+##Usage
+Mapping Stations: Add callsigns to the whitelist panel with your preferred WinTAK icon type (e.g., Civilian Vehicle, Ground Unit), or check "Map ALL Callsigns" to automatically map every heard station.
+
+Receiving/Sending Messages: When a station transmits an APRS message over the air, it will appear in both the app's APRS Messages tab and WinTAK's chat window. To reply, simply open the contact's chat in WinTAK, type your response, and hit send—the gateway will handle the AX.25 formatting and trigger your radio's PTT.
+
+##License
+This project is open-source and distributed under the MIT License.
